@@ -694,10 +694,31 @@ strong {
   width: 26rem;
 }
 
+.section-playlist {
+  background: #fafafa;
+}
+
 @media screen and (min-width: 768px) {
   .playlist-header .section-heading {
     width: 42rem;
   }
+}
+
+@media screen and (min-width: 768px) {
+  .book-header .section-heading {
+    width: 18rem;
+  }
+}
+
+.book-preview {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.book-preview .preview {
+  flex: 0 0 calc(50% - 2rem);
 }
 
 @media screen and (min-width: 768px) {
