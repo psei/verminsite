@@ -1,0 +1,124 @@
+////////////////////////////////////////
+// fonts
+
+// famaly
+$font-heading: 'Roboto', sans-serif;
+$font-special: 'Roboto', serif;
+$font-body: 'Roboto', sans-serif;
+
+// weight
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semi-bold: 600;
+$bold: 700;
+
+$body-weight: $light;
+$heading-weight: $bold;
+$button-weight: $medium;
+$strong-weight: $medium;
+
+// size
+$base-line-height: 1.75;
+$base-font-size: 2.2rem;
+
+$button-font-size: 1.6rem;
+$button-font-size-small: 1.2rem;
+
+$spacing: 0.125rem;
+
+////////////////////////////////////////
+// spacing
+
+// vertical-rhythm
+$y: $base-line-height * $base-font-size;
+// horizontal-rhythm
+$x: 1.6rem;
+
+////////////////////////////////////////
+// colors
+
+// dark shades of primary color
+$color-primary-1: #090310;
+$color-primary-2: #160a34;
+$color-primary-3: #191158;
+$color-primary-4: #171d7b;
+// primary color
+$color-primary-5: #1e3c9f;
+// lighter shades of primary color
+$color-primary-6: #4970b2;
+$color-primary-7: #759ec5;
+$color-primary-8: #a0c4d8;
+$color-primary-9: #cce4ea;
+$color-primary-10: #f8fcfc;
+
+// dark shades of accent color
+$color-accent-1: #190012;
+$color-accent-2: #500039;
+$color-accent-3: #870060;
+$color-accent-4: #bf0088;
+// accent color
+$color-accent-5: #f600af;
+// lighter shades of accent color
+$color-accent-6: #f932bf;
+$color-accent-7: #fb63cf;
+$color-accent-8: #fd94de;
+$color-accent-9: #fec6ee;
+$color-accent-10: #fff7fd;
+
+// darkest grey - used for headings
+$color-grey-1: #090909;
+$color-grey-2: #1c1c1c;
+$color-grey-3: #2f2f2f;
+$color-grey-4: #424242;
+// grey used for paragraphs
+$color-grey-5: #555555;
+$color-grey-6: #767676;
+$color-grey-7: #979797;
+$color-grey-8: #b8b8b8;
+$color-grey-9: #d9d9d9;
+$color-grey-10: #fafafa;
+
+$color-white: #fff;
+$color-black: #000;
+
+$color-purple: #d261f5;
+$color-yellow: #f3eac2;
+$color-blue: #61c5f5;
+$color-green: #9ad3bc;
+$color-orange: #f5b461;
+$color-red: #ec524b;
+
+////////////////////////////////////////
+// styles
+
+$transition: all 0.3s ease;
+$transition-1: all 0.5s ease;
+
+// pressed
+$shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+// normal
+$shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+// Hover
+$shadow-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+  0 4px 6px -2px rgba(0, 0, 0, 0.05);
+$shadow-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+  0 10px 10px -5px rgba(0, 0, 0, 0.04);
+$shadow-5: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+
+$shadow-inner: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+$shadow-outline: 0 0 0 3px rgba($color-primary-5, 0.5);
+
+$radius-1: 0.4rem;
+$radius-2: 1.2rem;
+$radius-3: 2.4rem;
+$radius-full: 999rem;
+
+////////////////////////////////////////
+// responsive breakpoints - mobile first
+
+$max-width: 960px;
+$phone: 480px;
+$tablet: 768px;
+$desktop: 1024px;
+$largeDesktop: 1440px;

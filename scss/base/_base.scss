@@ -1,0 +1,48 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  @include box-sizing(inherit);
+}
+
+html {
+  @include box-sizing(border-box);
+  font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
+  scroll-behavior: smooth;
+}
+
+body {
+  background: $color-white;
+  color: $color-grey-5;
+  font-family: $font-body;
+  font-weight: $body-weight;
+  line-height: $base-line-height;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img:not(.nav-logo) {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+i {
+  pointer-events: none;
+}
+
+::-moz-selection {
+  background-color: $color-accent-5;
+  color: $color-white;
+}
+
+::selection {
+  background-color: $color-accent-5;
+  color: $color-white;
+}

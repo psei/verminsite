@@ -1,0 +1,32 @@
+////////////////////////////////////////
+// flexbox grid
+
+.row {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  .col {
+    flex-basis: 100%;
+  }
+  @media screen and (min-width: $phone) {
+    flex-direction: row;
+    .col {
+      flex: 1;
+      &._20 {
+        flex: 0 0 calc(20% - 1.6rem);
+      }
+      &._25 {
+        flex: 0 0 calc(25% - 1.6rem);
+      }
+      &._33 {
+        flex: 0 0 calc(33.333% - 1.6rem);
+      }
+      &._50 {
+        flex: 0 0 calc(50% - 1.6rem);
+      }
+      &._75 {
+        flex: 0 0 calc(75% - 1.6rem);
+      }
+    }
+  }
+}

@@ -1,0 +1,53 @@
+////////////////////////////////
+// footer
+.main-footer {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: $y * 14;
+  background: url(../img/stifte.jpg) no-repeat bottom center;
+}
+
+.footer-images {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .image {
+    flex: 0 0 calc(33.33% - 2rem);
+    .round {
+      border-radius: $radius-full;
+      overflow: hidden;
+    }
+  }
+}
+
+.footer-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: $y * 2;
+  @media screen and (min-width: $tablet) {
+    margin-top: $y * 4;
+  }
+  li {
+    @include flex-center();
+    a {
+      color: $color-grey-1;
+      font-size: 2.8rem;
+      &:hover {
+        color: $color-accent-5;
+      }
+    }
+  }
+}
+
+.footer-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  img {
+    min-width: 200rem;
+    @media screen and (min-width: $desktop) {
+      width: 100%;
+    }
+  }
+}
