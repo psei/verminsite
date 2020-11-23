@@ -1,9 +1,20 @@
 ////////////////////////////////
+// section playlist
+
+////////////////////////////////
 // section cta
 
 .section-cta {
   background: $color-accent-6;
   background: url(../img/background-stars.jpg) no-repeat center center / cover;
+  @supports ((-webkit-clip-path: polygon(0 0)) or (clip-path: polygon(0 0))) or
+    (-webkit-clip-path: polygon(0 0)) {
+    -webkit-clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
+    @media screen and (min-width: $tablet) {
+      padding: ($y * 6) 0;
+    }
+  }
 }
 
 .cta-box {
@@ -83,6 +94,14 @@
 
 .section-feedback {
   background: linear-gradient(37deg, $color-primary-5, $color-accent-5);
+  @supports ((-webkit-clip-path: polygon(0 0)) or (clip-path: polygon(0 0))) or
+    (-webkit-clip-path: polygon(0 0)) {
+    -webkit-clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
+    @media screen and (min-width: $tablet) {
+      padding: ($y * 6) 0;
+    }
+  }
 }
 
 .feedback-box {
@@ -104,9 +123,6 @@
     }
   }
 }
-
-////////////////////////////////
-// section
 
 ////////////////////////////////
 // section

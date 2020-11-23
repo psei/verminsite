@@ -678,6 +678,18 @@ strong {
   background: url(../img/background-stars.jpg) no-repeat center center/cover;
 }
 
+@supports (-webkit-clip-path: polygon(0 0)) or (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+  .section-cta {
+    -webkit-clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
+  }
+  @media screen and (min-width: 768px) {
+    .section-cta {
+      padding: 23.1rem 0;
+    }
+  }
+}
+
 .cta-box {
   background: #fff;
 }
@@ -774,6 +786,18 @@ strong {
 
 .section-feedback {
   background: linear-gradient(37deg, #1e3c9f, #f600af);
+}
+
+@supports (-webkit-clip-path: polygon(0 0)) or (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+  .section-feedback {
+    -webkit-clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
+  }
+  @media screen and (min-width: 768px) {
+    .section-feedback {
+      padding: 23.1rem 0;
+    }
+  }
 }
 
 .feedback-box {
