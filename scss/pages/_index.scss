@@ -11,7 +11,9 @@
 
 .playlist-header {
   .section-heading {
-    width: 42rem;
+    @media screen and (min-width: $tablet) {
+      width: 42rem;
+    }
   }
 }
 
@@ -20,7 +22,9 @@
 
 .cta-header {
   .section-heading {
-    width: 26rem;
+    @media screen and (min-width: $tablet) {
+      width: 26rem;
+    }
   }
 }
 

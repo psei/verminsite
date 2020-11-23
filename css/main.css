@@ -174,7 +174,7 @@ h6 {
 }
 
 h1 {
-  font-size: 3.8rem;
+  font-size: 3.1rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -184,7 +184,7 @@ h1 {
 }
 
 h2 {
-  font-size: 3.2rem;
+  font-size: 2.6rem;
   background-color: #156787;
   background-image: linear-gradient(45deg, #156787, #ff0f9c);
   background-size: 100%;
@@ -202,7 +202,7 @@ h2 {
 }
 
 h3 {
-  font-size: 2.6rem;
+  font-size: 2.1rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -212,7 +212,7 @@ h3 {
 }
 
 h4 {
-  font-size: 2.2rem;
+  font-size: 1.8rem;
   background-color: #156787;
   background-image: linear-gradient(45deg, #156787, #ff0f9c);
   background-size: 100%;
@@ -230,7 +230,7 @@ h4 {
 }
 
 h5 {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -240,12 +240,12 @@ h5 {
 }
 
 h6 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 @media screen and (min-width: 768px) {
   h6 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 }
 
@@ -382,7 +382,7 @@ strong {
 
 @media screen and (min-width: 768px) {
   .container {
-    padding: 0 6.4rem;
+    padding: 0 3.2rem;
   }
 }
 
@@ -407,7 +407,7 @@ strong {
 }
 
 .section-large {
-  padding: 9.625rem 0;
+  padding: 7.7rem 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -596,8 +596,14 @@ strong {
   position: absolute;
   bottom: 0;
   left: 50%;
-  transform: translate(-50%, 30%);
-  width: 80%;
+  transform: translate(-50%, 25%);
+  width: 85%;
+}
+
+@media screen and (min-width: 480px) {
+  .header-logo {
+    width: 70%;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -608,7 +614,7 @@ strong {
 
 @media screen and (min-width: 1024px) {
   .header-logo {
-    width: 40%;
+    width: 50%;
   }
 }
 
@@ -688,12 +694,16 @@ strong {
   width: 26rem;
 }
 
-.playlist-header .section-heading {
-  width: 42rem;
+@media screen and (min-width: 768px) {
+  .playlist-header .section-heading {
+    width: 42rem;
+  }
 }
 
-.cta-header .section-heading {
-  width: 26rem;
+@media screen and (min-width: 768px) {
+  .cta-header .section-heading {
+    width: 26rem;
+  }
 }
 
 .section-cta {
