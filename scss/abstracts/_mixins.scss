@@ -2,7 +2,7 @@
   box-sizing: $box-model;
 }
 
-@mixin flex-center() {
+@mixin flex-center {
   display: flex;
   align-items: center;
   justify-content: center;

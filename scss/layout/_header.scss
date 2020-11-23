@@ -1,0 +1,9 @@
+////////////////////////////////
+// main header
+.header-logo {
+  margin: 0 auto;
+  width: 30rem;
+  @media screen and (min-width: $tablet) {
+    width: 50rem;
+  }
+}

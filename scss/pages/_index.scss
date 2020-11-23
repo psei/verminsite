@@ -1,19 +1,8 @@
 ////////////////////////////////
-// main header
-.header-logo {
-  margin: 0 auto;
-  width: 30rem;
-  @media screen and (min-width: $tablet) {
-    width: 50rem;
-  }
-}
-
-////////////////////////////////
 // section cta
 
 .section-cta {
   background: $color-accent-6;
-  //background: linear-gradient(34deg, $color-accent-6 0%, $color-primary-5 100%);
   background: url(../img/background-stars.jpg) no-repeat center center / cover;
 }
 
@@ -44,15 +33,11 @@
 ////////////////////////////////
 // section sowhcase
 
-.showcase-images {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.showcase-desc {
   .image {
-    flex: 0 0 calc(33.33% - 2rem);
-    .round {
-      border-radius: $radius-full;
-      overflow: hidden;
+    @include flex-center;
+    img {
+      height: 12rem;
     }
   }
 }

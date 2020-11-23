@@ -29,7 +29,7 @@
     margin-top: $y * 4;
   }
   li {
-    @include flex-center();
+    @include flex-center;
     a {
       color: $color-grey-1;
       font-size: 2.8rem;

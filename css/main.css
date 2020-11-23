@@ -558,6 +558,17 @@ strong {
   color: inherit;
 }
 
+.header-logo {
+  margin: 0 auto;
+  width: 30rem;
+}
+
+@media screen and (min-width: 768px) {
+  .header-logo {
+    width: 50rem;
+  }
+}
+
 .main-footer {
   position: relative;
   overflow: hidden;
@@ -624,17 +635,6 @@ strong {
   }
 }
 
-.header-logo {
-  margin: 0 auto;
-  width: 30rem;
-}
-
-@media screen and (min-width: 768px) {
-  .header-logo {
-    width: 50rem;
-  }
-}
-
 .section-cta {
   background: #f932bf;
   background: url(../img/background-stars.jpg) no-repeat center center/cover;
@@ -673,17 +673,12 @@ strong {
   margin-bottom: 1.925rem;
 }
 
-.showcase-images {
+.showcase-desc .image {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
-.showcase-images .image {
-  flex: 0 0 calc(33.33% - 2rem);
-}
-
-.showcase-images .image .round {
-  border-radius: 999rem;
-  overflow: hidden;
+.showcase-desc .image img {
+  height: 12rem;
 }
