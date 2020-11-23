@@ -93,7 +93,8 @@
 // section feedback
 
 .section-feedback {
-  background: linear-gradient(37deg, $color-primary-5, $color-accent-5);
+  background: $color-accent-5;
+  background: linear-gradient(145deg, $color-accent-5, $color-primary-5);
   @supports ((-webkit-clip-path: polygon(0 0)) or (clip-path: polygon(0 0))) or
     (-webkit-clip-path: polygon(0 0)) {
     @media screen and (min-width: $tablet) {
