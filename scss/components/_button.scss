@@ -12,18 +12,6 @@
     padding: ($y / 2) ($x * 2);
     border: 1px solid transparent;
     transition: $transition;
-    //text-transform: uppercase;
-    //box-shadow: $shadow-2;
-    //letter-spacing: $spacing;
-    //border-radius: $radius-1;
-  }
-  &:hover {
-    //transform: translateY(-3px);
-    //box-shadow: $shadow-3;
-  }
-  &:active {
-    //transform: translateY(-1px);
-    //box-shadow: $shadow-1;
   }
 
   &--primary {
@@ -31,20 +19,24 @@
     color: $color-primary-10;
     &:hover {
       background: $color-primary-4;
+      color: $color-primary-10;
     }
     &:active {
       background: $color-primary-3;
+      color: $color-primary-10;
     }
   }
 
   &--secondary {
-    background: $color-accent-9;
-    color: $color-accent-1;
+    background: $color-accent-5;
+    color: $color-accent-10;
     &:hover {
-      background: $color-accent-8;
+      background: $color-accent-4;
+      color: $color-accent-10;
     }
     &:active {
-      background: $color-accent-8;
+      background: $color-accent-3;
+      color: $color-accent-10;
     }
   }
 

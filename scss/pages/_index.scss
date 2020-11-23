@@ -48,10 +48,18 @@
 }
 
 .explore-images {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    justify-content: space-between;
+  }
   .explore {
     margin-bottom: $y * 2;
+    @media screen and (min-width: $tablet) {
+      flex: 0 0 calc(33.33% - 4rem);
+    }
     .explore-image {
       @include flex-center;
+      height: 12rem;
       img {
         width: 12rem;
         border-radius: $radius-full;
@@ -71,7 +79,31 @@
 }
 
 ////////////////////////////////
-// section
+// section feedback
+
+.section-feedback {
+  background: linear-gradient(37deg, $color-primary-5, $color-accent-5);
+}
+
+.feedback-box {
+  background: $color-white;
+  padding: $y $x;
+  .feedback-images {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: $y;
+    .image {
+      flex: 0 0 calc(33.33% - 4rem);
+    }
+  }
+  .feedback-desc {
+    text-align: center;
+    p {
+      margin-bottom: $y/2;
+    }
+  }
+}
 
 ////////////////////////////////
 // section
