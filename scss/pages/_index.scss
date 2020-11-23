@@ -9,10 +9,10 @@
   background: url(../img/background-stars.jpg) no-repeat center center / cover;
   @supports ((-webkit-clip-path: polygon(0 0)) or (clip-path: polygon(0 0))) or
     (-webkit-clip-path: polygon(0 0)) {
-    -webkit-clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
-    clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
     @media screen and (min-width: $tablet) {
       padding: ($y * 6) 0;
+      -webkit-clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
+      clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
     }
   }
 }
@@ -96,9 +96,9 @@
   background: linear-gradient(37deg, $color-primary-5, $color-accent-5);
   @supports ((-webkit-clip-path: polygon(0 0)) or (clip-path: polygon(0 0))) or
     (-webkit-clip-path: polygon(0 0)) {
-    -webkit-clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
-    clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
     @media screen and (min-width: $tablet) {
+      -webkit-clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
+      clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
       padding: ($y * 6) 0;
     }
   }

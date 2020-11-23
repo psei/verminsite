@@ -679,13 +679,11 @@ strong {
 }
 
 @supports (-webkit-clip-path: polygon(0 0)) or (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
-  .section-cta {
-    -webkit-clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
-    clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
-  }
   @media screen and (min-width: 768px) {
     .section-cta {
       padding: 23.1rem 0;
+      -webkit-clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
+      clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
     }
   }
 }
@@ -789,12 +787,10 @@ strong {
 }
 
 @supports (-webkit-clip-path: polygon(0 0)) or (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
-  .section-feedback {
-    -webkit-clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
-    clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
-  }
   @media screen and (min-width: 768px) {
     .section-feedback {
+      -webkit-clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
+      clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
       padding: 23.1rem 0;
     }
   }
