@@ -23,9 +23,9 @@
     display: flex;
     align-items: center;
   }
-  .ta-image {
+  .cta-image {
     @media screen and (min-width: $tablet) {
-      flex: 0 0 30%;
+      flex: 0 0 40%;
     }
   }
   .cta-desc {
@@ -33,7 +33,7 @@
     text-align: center;
     @media screen and (min-width: $tablet) {
       text-align: left;
-      flex: 0 0 70%;
+      flex: 0 0 60%;
     }
     .title {
       margin-bottom: $y/2;

@@ -174,37 +174,37 @@ h6 {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 3.8rem;
 }
 
 @media screen and (min-width: 768px) {
   h1 {
-    font-size: 4.5rem;
-  }
-}
-
-h2 {
-  font-size: 2.8rem;
-}
-
-@media screen and (min-width: 768px) {
-  h2 {
     font-size: 3.8rem;
   }
 }
 
+h2 {
+  font-size: 3.2rem;
+}
+
+@media screen and (min-width: 768px) {
+  h2 {
+    font-size: 3.2rem;
+  }
+}
+
 h3 {
-  font-size: 2.8rem;
+  font-size: 2.6rem;
 }
 
 @media screen and (min-width: 768px) {
   h3 {
-    font-size: 3.5rem;
+    font-size: 2.6rem;
   }
 }
 
 h4 {
-  font-size: 1.8rem;
+  font-size: 2.2rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -214,7 +214,7 @@ h4 {
 }
 
 h5 {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -224,12 +224,12 @@ h5 {
 }
 
 h6 {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
 }
 
 @media screen and (min-width: 768px) {
   h6 {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -396,12 +396,12 @@ strong {
 }
 
 .section-large {
-  padding: 5.775rem 0;
+  padding: 9.625rem 0;
 }
 
 @media screen and (min-width: 768px) {
   .section-large {
-    padding: 9.625rem 0;
+    padding: 11.55rem 0;
   }
 }
 
@@ -652,8 +652,8 @@ strong {
 }
 
 @media screen and (min-width: 768px) {
-  .cta-box .ta-image {
-    flex: 0 0 30%;
+  .cta-box .cta-image {
+    flex: 0 0 40%;
   }
 }
 
@@ -665,7 +665,7 @@ strong {
 @media screen and (min-width: 768px) {
   .cta-box .cta-desc {
     text-align: left;
-    flex: 0 0 70%;
+    flex: 0 0 60%;
   }
 }
 

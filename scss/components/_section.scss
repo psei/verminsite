@@ -28,8 +28,8 @@
 }
 
 .section-large {
-  padding: ($y * 1.5) 0;
+  padding: ($y * 2.5) 0;
   @media screen and (min-width: $tablet) {
-    padding: ($y * 2.5) 0;
+    padding: ($y * 3) 0;
   }
 }
