@@ -14,20 +14,6 @@
 // section
 
 .section {
-  padding: $y 0;
-  @media screen and (min-width: $tablet) {
-    padding: ($y * 1.5) 0;
-  }
-}
-
-.section-small {
-  padding: $y/3 0;
-  @media screen and (min-width: $tablet) {
-    padding: $y 0;
-  }
-}
-
-.section-large {
   padding: ($y * 2) 0;
   @media screen and (min-width: $tablet) {
     padding: ($y * 3) 0;

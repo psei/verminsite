@@ -387,31 +387,11 @@ strong {
 }
 
 .section {
-  padding: 3.85rem 0;
-}
-
-@media screen and (min-width: 768px) {
-  .section {
-    padding: 5.775rem 0;
-  }
-}
-
-.section-small {
-  padding: 1.28333rem 0;
-}
-
-@media screen and (min-width: 768px) {
-  .section-small {
-    padding: 3.85rem 0;
-  }
-}
-
-.section-large {
   padding: 7.7rem 0;
 }
 
 @media screen and (min-width: 768px) {
-  .section-large {
+  .section {
     padding: 11.55rem 0;
   }
 }
