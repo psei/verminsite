@@ -707,12 +707,49 @@ strong {
   margin-bottom: 1.925rem;
 }
 
-.showcase-desc .image {
+.explore-header {
+  margin-bottom: 7.7rem;
+}
+
+.explore-header .image {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.showcase-desc .image img {
-  height: 12rem;
+.explore-header .image img {
+  width: 12rem;
+}
+
+.explore-header p {
+  text-align: center;
+  margin-top: 1.925rem;
+}
+
+.explore-images .explore {
+  margin-bottom: 7.7rem;
+}
+
+.explore-images .explore .explore-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.explore-images .explore .explore-image img {
+  width: 12rem;
+  border-radius: 999rem;
+}
+
+.explore-images .explore .explore-info {
+  margin-top: 2.56667rem;
+  text-align: center;
+}
+
+.explore-images .explore .explore-info .title {
+  margin-bottom: 1.925rem;
+}
+
+.explore-images .explore .explore-info p {
+  font-size: 1.6rem;
 }

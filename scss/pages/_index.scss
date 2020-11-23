@@ -31,13 +31,41 @@
 }
 
 ////////////////////////////////
-// section sowhcase
+// section explore
 
-.showcase-desc {
+.explore-header {
+  margin-bottom: $y * 2;
   .image {
     @include flex-center;
     img {
-      height: 12rem;
+      width: 12rem;
+    }
+  }
+  p {
+    text-align: center;
+    margin-top: $y/2;
+  }
+}
+
+.explore-images {
+  .explore {
+    margin-bottom: $y * 2;
+    .explore-image {
+      @include flex-center;
+      img {
+        width: 12rem;
+        border-radius: $radius-full;
+      }
+    }
+    .explore-info {
+      margin-top: $y/1.5;
+      text-align: center;
+      .title {
+        margin-bottom: $y/2;
+      }
+      p {
+        font-size: 1.6rem;
+      }
     }
   }
 }
