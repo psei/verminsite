@@ -561,8 +561,14 @@ strong {
 .main-header {
   background: #f932bf;
   background: url(../img/background-stars.jpg) no-repeat top center/cover;
+  height: 16rem;
   position: relative;
-  height: 20rem;
+}
+
+@media screen and (min-width: 480px) {
+  .main-header {
+    height: 20rem;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -572,15 +578,28 @@ strong {
 }
 
 .header-logo {
-  margin: 0 auto;
-  width: 40rem;
-  transform: translateY(4.8rem);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 30%);
+  width: 80%;
 }
 
 @media screen and (min-width: 768px) {
   .header-logo {
-    transform: translateY(8rem);
-    width: 60rem;
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .header-logo {
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .header-logo {
+    width: 30%;
   }
 }
 
