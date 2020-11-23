@@ -136,7 +136,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-img:not(.nav-logo) {
+img {
   display: block;
   max-width: 100%;
   height: auto;
@@ -614,7 +614,7 @@ strong {
 
 @media screen and (min-width: 1440px) {
   .header-logo {
-    width: 30%;
+    width: 35%;
   }
 }
 
@@ -682,6 +682,18 @@ strong {
   .footer-bottom img {
     width: 100%;
   }
+}
+
+.intro-header .section-heading {
+  width: 26rem;
+}
+
+.playlist-header .section-heading {
+  width: 42rem;
+}
+
+.cta-header .section-heading {
+  width: 26rem;
 }
 
 .section-cta {
@@ -782,7 +794,8 @@ strong {
 }
 
 .explore-images .explore .explore-info .title {
-  margin-bottom: 1.925rem;
+  margin: 0 auto 1.925rem auto;
+  width: 10rem;
 }
 
 .explore-images .explore .explore-info p {

@@ -1,8 +1,28 @@
 ////////////////////////////////
+// section intro
+.intro-header {
+  .section-heading {
+    width: 26rem;
+  }
+}
+
+////////////////////////////////
 // section playlist
+
+.playlist-header {
+  .section-heading {
+    width: 42rem;
+  }
+}
 
 ////////////////////////////////
 // section cta
+
+.cta-header {
+  .section-heading {
+    width: 26rem;
+  }
+}
 
 .section-cta {
   background: $color-accent-6;
@@ -77,7 +97,8 @@
       margin-top: $y/1.5;
       text-align: center;
       .title {
-        margin-bottom: $y/2;
+        margin: 0 auto $y/2 auto;
+        width: 10rem;
       }
       p {
         font-size: 1.6rem;
