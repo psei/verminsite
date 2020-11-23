@@ -10,7 +10,7 @@
   width: 4.8rem;
   height: 4.8rem;
   border-radius: $radius-full;
-  background: $color-accent-5;
+  background: $color-grey-5;
   transform: translateY(200%);
   transition: $transition;
   opacity: 0;
@@ -25,18 +25,17 @@
     opacity: 1;
   }
   &:hover {
-    background: $color-accent-6;
+    background: $color-accent-5;
     box-shadow: $shadow-3;
   }
-  i {
-    color: $color-grey-10;
-    font-size: 1.6rem;
+
+  img {
     position: absolute;
     top: 50%;
     left: 50%;
+    height: 3.8rem;
+    width: 3.8rem;
     transform: translate(-50%, -50%);
-    @media screen and (min-width: $tablet) {
-      font-size: 2rem;
-    }
+    pointer-events: none;
   }
 }
