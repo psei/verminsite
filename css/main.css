@@ -558,14 +558,29 @@ strong {
   color: inherit;
 }
 
+.main-header {
+  background: #f932bf;
+  background: url(../img/background-stars.jpg) no-repeat top center/cover;
+  position: relative;
+  height: 20rem;
+}
+
+@media screen and (min-width: 768px) {
+  .main-header {
+    height: 30rem;
+  }
+}
+
 .header-logo {
   margin: 0 auto;
-  width: 30rem;
+  width: 40rem;
+  transform: translateY(4.8rem);
 }
 
 @media screen and (min-width: 768px) {
   .header-logo {
-    width: 50rem;
+    transform: translateY(8rem);
+    width: 60rem;
   }
 }
 
