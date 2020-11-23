@@ -9,11 +9,36 @@
 ////////////////////////////////
 // section playlist
 
+.section-playlist {
+  background: $color-grey-10;
+}
+
 .playlist-header {
   .section-heading {
     @media screen and (min-width: $tablet) {
       width: 42rem;
     }
+  }
+}
+
+////////////////////////////////
+// section book
+
+.book-header {
+  .section-heading {
+    @media screen and (min-width: $tablet) {
+      width: 18rem;
+    }
+  }
+}
+
+.book-preview {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  .preview {
+    flex: 0 0 calc(50% - 2rem);
   }
 }
 
