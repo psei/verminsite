@@ -519,20 +519,14 @@ strong {
   background: #2f2f2f;
 }
 
-.btn i {
-  padding-left: 1.6rem;
-  font-size: inherit;
-  color: inherit;
-}
-
 .btn--small, .btn--small:link, .btn--small:visited {
   padding: 0.9625rem 2rem;
   font-size: 1.2rem;
 }
 
 .btn--square, .btn--square:link, .btn--square:visited {
-  width: 4.8rem;
-  height: 4.8rem;
+  width: 5.4rem;
+  height: 5.4rem;
   padding: 0;
   text-align: center;
   font-size: 1.2rem;
@@ -694,14 +688,8 @@ strong {
   width: 26rem;
 }
 
-.section-playlist {
+.section-book {
   background: #fafafa;
-}
-
-@media screen and (min-width: 768px) {
-  .playlist-header .section-heading {
-    width: 42rem;
-  }
 }
 
 @media screen and (min-width: 768px) {
@@ -718,7 +706,76 @@ strong {
 }
 
 .book-preview .preview {
-  flex: 0 0 calc(50% - 2rem);
+  flex: 0 0 calc(50% - 1.6rem);
+  margin-bottom: 3.2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .playlist-header .section-heading {
+    width: 42rem;
+  }
+}
+
+.playlist-box {
+  margin-top: 3.85rem;
+}
+
+.playlist-box .tape {
+  margin-bottom: 3.85rem;
+}
+
+.playlist-box .tape .tape-top {
+  margin-bottom: 1.925rem;
+  display: flex;
+  align-items: center;
+}
+
+.playlist-box .tape .tape-top .tape-image {
+  flex: 1;
+  margin-right: 1.6rem;
+}
+
+@media screen and (min-width: 768px) {
+  .playlist-box .tape .tape-top .tape-image {
+    margin-right: 3.2rem;
+  }
+}
+
+.playlist-box .tape .tape-top .tape-title {
+  flex: 3;
+}
+
+.playlist-box .tape .tape-top .tape-button {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.playlist-box .tape .tape-top .tape-button .tape-btn {
+  font-size: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .playlist-box .tape .tape-top .tape-button .tape-btn {
+    font-size: 6rem;
+  }
+}
+
+.playlist-box .tape .tape-content {
+  visibility: hidden;
+  height: 0;
+}
+
+.playlist-box .tape .tape-content .tape-desc {
+  margin-top: 1.925rem;
+}
+
+.playlist-box .tape:target .tape-content {
+  visibility: visible;
+  height: auto;
 }
 
 @media screen and (min-width: 768px) {

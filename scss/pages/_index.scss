@@ -7,22 +7,11 @@
 }
 
 ////////////////////////////////
-// section playlist
+// section book
 
-.section-playlist {
+.section-book {
   background: $color-grey-10;
 }
-
-.playlist-header {
-  .section-heading {
-    @media screen and (min-width: $tablet) {
-      width: 42rem;
-    }
-  }
-}
-
-////////////////////////////////
-// section book
 
 .book-header {
   .section-heading {
@@ -38,7 +27,66 @@
   align-items: center;
   justify-content: space-between;
   .preview {
-    flex: 0 0 calc(50% - 2rem);
+    flex: 0 0 calc(50% - 1.6rem);
+    margin-bottom: 3.2rem;
+  }
+}
+
+////////////////////////////////
+// section playlist
+
+.playlist-header {
+  .section-heading {
+    @media screen and (min-width: $tablet) {
+      width: 42rem;
+    }
+  }
+}
+
+.playlist-box {
+  margin-top: $y;
+  .tape {
+    margin-bottom: $y;
+    .tape-top {
+      margin-bottom: $y/2;
+      display: flex;
+      align-items: center;
+      .tape-image {
+        flex: 1;
+        margin-right: $x;
+        @media screen and (min-width: $tablet) {
+          margin-right: $x * 2;
+        }
+      }
+      .tape-title {
+        flex: 3;
+      }
+      .tape-button {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+        .tape-btn {
+          font-size: 4rem;
+          @include flex-center;
+          @media screen and (min-width: $tablet) {
+            font-size: 6rem;
+          }
+        }
+      }
+    }
+    .tape-content {
+      visibility: hidden;
+      height: 0;
+      .tape-desc {
+        margin-top: $y/2;
+      }
+    }
+    &:target {
+      .tape-content {
+        visibility: visible;
+        height: auto;
+      }
+    }
   }
 }
 
