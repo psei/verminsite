@@ -598,6 +598,50 @@ strong {
   }
 }
 
+.nav {
+  padding: 1.925rem 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.nav .lang-icons {
+  display: flex;
+  align-items: center;
+}
+
+.nav .lang-icons li {
+  margin-left: 1.6rem;
+}
+
+.nav .lang-icons li img {
+  height: 3.4rem;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 5px solid rgba(255, 255, 255, 0.2);
+  border-radius: 999rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .nav .lang-icons li img {
+    height: 4.4rem;
+  }
+}
+
+.nav .lang-icons li img.active {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+  border: 5px solid rgba(255, 255, 255, 0.4);
+}
+
+.nav .lang-icons li img:hover {
+  -webkit-filter: grayscale(25%);
+  filter: grayscale(25%);
+  border: 5px solid #ff0f9c;
+}
+
 .main-footer {
   position: relative;
   overflow: hidden;

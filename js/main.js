@@ -2,15 +2,50 @@
 // variables
 const toTopBtn = document.querySelector('.to-top');
 const scrollLinks = document.querySelectorAll('.scroll-link');
+const langBtns = document.querySelectorAll('.lang-btn');
 
 ////////////////////////
 // event listeners
 function eventListeners() {
   window.addEventListener('scroll', handleScroll);
+  langBtns.forEach(btn => {
+    btn.addEventListener('click', changeLangauge);
+  });
 };
 
 ////////////////////////
 // functions
+
+function changeLangauge(e) {
+  if (e.target.dataset.lang === 'de') {
+    showLanguage('de');
+    hideLanguage('en');
+  } else if (e.target.dataset.lang === 'en') {
+    showLanguage('en');
+    hideLanguage('de');
+  }
+  langBtns.forEach(btn => {
+    if (btn.dataset.lang === e.target.dataset.lang) {
+      btn.classList.add('active');
+    } else {
+      btn.classList.remove('active');
+    }
+  });
+};
+
+function hideLanguage(language) {
+  const langaugeContent = document.querySelectorAll(`body [lang="${language}"]`);
+    langaugeContent.forEach(content => {
+    content.style.display = 'none';
+  });
+};
+
+function showLanguage(language) {
+  const langaugeContent = document.querySelectorAll(`body [lang="${language}"]`);
+    langaugeContent.forEach(content => {
+    content.style.display = 'block';
+  });
+};
 
 function handleScroll() {
   showBackToTop();
@@ -41,6 +76,7 @@ function smoothScrool() {
 };
 
 function init() {
+  hideLanguage('de');
   smoothScrool();
   eventListeners();
 };

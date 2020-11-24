@@ -32,3 +32,39 @@
     width: 35%;
   }
 }
+
+.nav {
+  padding: $y/2 $x;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  .lang-icons {
+    display: flex;
+    align-items: center;
+    li {
+      margin-left: $x;
+      img {
+        height: 3.4rem;
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+        cursor: pointer;
+        transition: $transition;
+        border: 5px solid rgba($color-white, 0.2);
+        border-radius: $radius-full;
+        @media screen and (min-width: $desktop) {
+          height: 4.4rem;
+        }
+        &.active {
+          -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+          border: 5px solid rgba($color-white, 0.4);
+        }
+        &:hover {
+          -webkit-filter: grayscale(25%);
+          filter: grayscale(25%);
+          border: 5px solid $color-accent-5;
+        }
+      }
+    }
+  }
+}
