@@ -10,7 +10,6 @@
     font-size: $button-font-size;
     font-weight: $button-weight;
     padding: ($y / 2) ($x * 2);
-    border: 1px solid transparent;
     transition: $transition;
   }
 
@@ -21,7 +20,9 @@
       background: $color-primary-4;
       color: $color-primary-10;
     }
-    &:active {
+    &:active,
+    &:focus {
+      outline: none;
       background: $color-primary-3;
       color: $color-primary-10;
     }
@@ -29,14 +30,19 @@
 
   &--secondary {
     background: $color-accent-5;
+    background-image: $gradient-primary;
+    background-size: 200%;
+    background-position: left;
     color: $color-accent-10;
     &:hover {
-      background: $color-accent-4;
-      color: $color-accent-10;
+      background-position: right;
+      color: $color-accent-1;
     }
-    &:active {
-      background: $color-accent-3;
-      color: $color-accent-10;
+    &:active,
+    &:focus {
+      outline: none;
+      background-position: right;
+      color: $color-accent-1;
     }
   }
 
@@ -48,7 +54,9 @@
       border: 1px solid $color-white;
       color: $color-white;
     }
-    &:active {
+    &:active,
+    &:focus {
+      outline: none;
       background: transparent;
       border: 1px solid $color-white;
       color: $color-white;
@@ -67,7 +75,9 @@
       color: $color-white;
       background: $color-primary-5;
     }
-    &:active {
+    &:active,
+    &:focus {
+      outline: none;
       color: $color-white;
       background: $color-primary-5;
     }
@@ -85,7 +95,9 @@
       color: $color-primary-5;
       background: $color-white;
     }
-    &:active {
+    &:active,
+    &:focus {
+      outline: none;
       color: $color-primary-5;
       background: $color-white;
     }
@@ -97,7 +109,9 @@
     &:hover {
       background: $color-grey-4;
     }
-    &:active {
+    &:active,
+    &:focus {
+      outline: none;
       background: $color-grey-3;
     }
   }
@@ -149,7 +163,9 @@
     color: $color-accent-4;
     border-bottom: 2px solid $color-accent-4;
   }
-  &:active {
+  &:active,
+  &:focus {
+    outline: none;
     color: $color-accent-4;
     border-bottom: 2px solid $color-accent-4;
   }

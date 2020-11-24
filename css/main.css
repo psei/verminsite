@@ -112,6 +112,24 @@
   }
 }
 
+@-webkit-keyframes gradient-animation {
+  from {
+    background-position: left;
+  }
+  to {
+    background-position: right;
+  }
+}
+
+@keyframes gradient-animation {
+  from {
+    background-position: left;
+  }
+  to {
+    background-position: right;
+  }
+}
+
 *,
 *::before,
 *::after {
@@ -403,7 +421,6 @@ strong {
   font-size: 1.6rem;
   font-weight: 500;
   padding: 1.925rem 3.2rem;
-  border: 1px solid transparent;
   transition: all 0.3s ease;
 }
 
@@ -417,24 +434,29 @@ strong {
   color: #f9fdff;
 }
 
-.btn--primary:active {
+.btn--primary:active, .btn--primary:focus {
+  outline: none;
   background: #156787;
   color: #f9fdff;
 }
 
 .btn--secondary {
   background: #ff0f9c;
+  background-image: linear-gradient(145deg, #ff0f9c, #27c3ff);
+  background-size: 200%;
+  background-position: left;
   color: #fff8fc;
 }
 
 .btn--secondary:hover {
-  background: #c30c77;
-  color: #fff8fc;
+  background-position: right;
+  color: #0f0109;
 }
 
-.btn--secondary:active {
-  background: #870853;
-  color: #fff8fc;
+.btn--secondary:active, .btn--secondary:focus {
+  outline: none;
+  background-position: right;
+  color: #0f0109;
 }
 
 .btn--white {
@@ -448,7 +470,8 @@ strong {
   color: #fff;
 }
 
-.btn--white:active {
+.btn--white:active, .btn--white:focus {
+  outline: none;
   background: transparent;
   border: 1px solid #fff;
   color: #fff;
@@ -465,7 +488,8 @@ strong {
   background: #27c3ff;
 }
 
-.btn--outline:active {
+.btn--outline:active, .btn--outline:focus {
+  outline: none;
   color: #fff;
   background: #27c3ff;
 }
@@ -481,7 +505,8 @@ strong {
   background: #fff;
 }
 
-.btn--outline-light:active {
+.btn--outline-light:active, .btn--outline-light:focus {
+  outline: none;
   color: #27c3ff;
   background: #fff;
 }
@@ -495,7 +520,8 @@ strong {
   background: #424242;
 }
 
-.btn--dark:active {
+.btn--dark:active, .btn--dark:focus {
+  outline: none;
   background: #2f2f2f;
 }
 
@@ -536,7 +562,8 @@ strong {
   border-bottom: 2px solid #c30c77;
 }
 
-.btn-link:active {
+.btn-link:active, .btn-link:focus {
+  outline: none;
   color: #c30c77;
   border-bottom: 2px solid #c30c77;
 }
@@ -936,7 +963,11 @@ strong {
 
 .section-feedback {
   background: #ff0f9c;
-  background: linear-gradient(145deg, #ff0f9c, #27c3ff);
+  background-image: linear-gradient(145deg, #ff0f9c, #27c3ff);
+  background-size: 200%;
+  background-position: left;
+  -webkit-animation: gradient-animation 10s infinite alternate;
+  animation: gradient-animation 10s infinite alternate;
 }
 
 @supports (-webkit-clip-path: polygon(0 0)) or (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {

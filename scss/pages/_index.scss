@@ -206,7 +206,11 @@
 
 .section-feedback {
   background: $color-accent-5;
-  background: linear-gradient(145deg, $color-accent-5, $color-primary-5);
+  background-image: $gradient-primary;
+  background-size: 200%;
+  background-position: left;
+  -webkit-animation: gradient-animation 10s infinite alternate;
+  animation: gradient-animation 10s infinite alternate;
   @supports ((-webkit-clip-path: polygon(0 0)) or (clip-path: polygon(0 0))) or
     (-webkit-clip-path: polygon(0 0)) {
     @media screen and (min-width: $tablet) {
