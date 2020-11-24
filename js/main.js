@@ -20,9 +20,11 @@ function changeLangauge(e) {
   if (e.target.dataset.lang === 'de') {
     showLanguage('de');
     hideLanguage('en');
+    document.querySelector('html').setAttribute('lang', 'de');
   } else if (e.target.dataset.lang === 'en') {
     showLanguage('en');
     hideLanguage('de');
+    document.querySelector('html').setAttribute('lang', 'en');
   }
   langBtns.forEach(btn => {
     if (btn.dataset.lang === e.target.dataset.lang) {
