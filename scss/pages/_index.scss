@@ -77,14 +77,31 @@
     .tape-content {
       visibility: hidden;
       height: 0;
+      overflow: hidden;
+      .tape-youtube {
+        transition: $transition-2;
+        transform: translateY(-6rem);
+        opacity: 0;
+      }
       .tape-desc {
         margin-top: $y/2;
+        transition: $transition-2;
+        transform: translateY(-2rem);
+        opacity: 0;
       }
     }
     &:target {
       .tape-content {
         visibility: visible;
         height: auto;
+        .tape-youtube {
+          transform: translateY(0rem);
+          opacity: 1;
+        }
+        .tape-desc {
+          transform: translateY(0rem);
+          opacity: 1;
+        }
       }
     }
   }

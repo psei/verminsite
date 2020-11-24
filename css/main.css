@@ -791,15 +791,35 @@ strong {
 .playlist-box .tape .tape-content {
   visibility: hidden;
   height: 0;
+  overflow: hidden;
+}
+
+.playlist-box .tape .tape-content .tape-youtube {
+  transition: all 1.5s ease;
+  transform: translateY(-6rem);
+  opacity: 0;
 }
 
 .playlist-box .tape .tape-content .tape-desc {
   margin-top: 1.925rem;
+  transition: all 1.5s ease;
+  transform: translateY(-2rem);
+  opacity: 0;
 }
 
 .playlist-box .tape:target .tape-content {
   visibility: visible;
   height: auto;
+}
+
+.playlist-box .tape:target .tape-content .tape-youtube {
+  transform: translateY(0rem);
+  opacity: 1;
+}
+
+.playlist-box .tape:target .tape-content .tape-desc {
+  transform: translateY(0rem);
+  opacity: 1;
 }
 
 @media screen and (min-width: 768px) {
