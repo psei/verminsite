@@ -1003,3 +1003,25 @@ strong {
 .feedback-box .feedback-desc p {
   margin-bottom: 1.925rem;
 }
+
+.scroll {
+  transition: all 0.5s ease;
+}
+
+.scroll.scroll--fade-in {
+  opacity: 0;
+}
+
+.scroll.scroll--fade-in.appear {
+  opacity: 1;
+}
+
+.scroll.scroll--fade-in-top {
+  opacity: 0;
+  transform: translateY(-4rem);
+}
+
+.scroll.scroll--fade-in-top.appear {
+  opacity: 1;
+  transform: translateY(0rem);
+}

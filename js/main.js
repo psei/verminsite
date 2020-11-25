@@ -3,19 +3,50 @@
 const toTopBtn = document.querySelector('.to-top');
 const scrollLinks = document.querySelectorAll('.scroll-link');
 const langBtns = document.querySelectorAll('.lang-btn');
+const scrollElements = document.querySelectorAll('.scroll');
 
 ////////////////////////
 // event listeners
 function eventListeners() {
+  // handle scroll event
   window.addEventListener('scroll', handleScroll);
+  //change language
   langBtns.forEach(btn => {
     btn.addEventListener('click', changeLangauge);
   });
 };
 
 ////////////////////////
+// everything related to scroll on page
+function handleScroll() {
+  showBackToTop();
+  showSection();
+};
+
+////////////////////////
 // functions
 
+// show element when it is in viewport
+function showSection() {
+  scrollElements.forEach(element => {
+    if (isInViewport(element)) {
+      element.classList.add('appear');
+    }
+  });
+}
+
+function isInViewport (element) {
+    const bounding = element.getBoundingClientRect();
+    return bounding.top <= window.innerHeight / 2;
+};
+
+/*
+  bounding.left >= 0 &&
+  bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+  bounding.right <= (window.innerWidth || document.documentElement.clientWidth)
+*/
+
+// switch between languages
 function changeLangauge(e) {
   if (e.target.dataset.lang === 'de') {
     showLanguage('de');
@@ -49,10 +80,7 @@ function showLanguage(language) {
   });
 };
 
-function handleScroll() {
-  showBackToTop();
-};
-
+// show the back to top button
 function showBackToTop() {
   if (window.pageYOffset > 512) {
     toTopBtn.classList.add('active');
@@ -61,6 +89,7 @@ function showBackToTop() {
   }
 };
 
+// smooth scroll
 function smoothScrool() {
   scrollLinks.forEach(link => {
     link.addEventListener('click', e => {
@@ -77,10 +106,14 @@ function smoothScrool() {
   });
 };
 
+////////////////////////
+// init everyhting
 function init() {
   hideLanguage('de');
   smoothScrool();
   eventListeners();
 };
 
+////////////////////////
+// wait until dom content is loeded
 document.addEventListener('DOMContentLoaded', init);

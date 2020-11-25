@@ -1,0 +1,17 @@
+.scroll {
+  transition: $transition-section;
+  &.scroll--fade-in {
+    opacity: 0;
+    &.appear {
+      opacity: 1;
+    }
+  }
+  &.scroll--fade-in-top {
+    opacity: 0;
+    transform: translateY(-4rem);
+    &.appear {
+      opacity: 1;
+      transform: translateY(0rem);
+    }
+  }
+}
