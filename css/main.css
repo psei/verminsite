@@ -351,8 +351,8 @@ strong {
 .to-top {
   position: fixed;
   display: block;
-  bottom: 3.85rem;
-  right: 3.85rem;
+  bottom: 1.6rem;
+  right: 1.6rem;
   z-index: 1;
   width: 4.8rem;
   height: 4.8rem;
@@ -672,6 +672,7 @@ strong {
 .main-footer {
   position: relative;
   overflow: hidden;
+  padding-top: 3.85rem;
   padding-bottom: 53.9rem;
   background: url(../img/stifte.jpg) no-repeat bottom center;
 }
@@ -743,6 +744,10 @@ strong {
   background: #fafafa;
 }
 
+.book-header {
+  margin-bottom: 3.85rem;
+}
+
 @media screen and (min-width: 768px) {
   .book-header .section-heading {
     width: 18rem;
@@ -763,7 +768,7 @@ strong {
 
 @media screen and (min-width: 768px) {
   .playlist-header .section-heading {
-    width: 42rem;
+    width: 54rem;
   }
 }
 

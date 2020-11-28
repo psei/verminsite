@@ -14,6 +14,7 @@
 }
 
 .book-header {
+  margin-bottom: $y;
   .section-heading {
     @media screen and (min-width: $tablet) {
       width: 18rem;
@@ -38,7 +39,7 @@
 .playlist-header {
   .section-heading {
     @media screen and (min-width: $tablet) {
-      width: 42rem;
+      width: 54rem;
     }
   }
 }
