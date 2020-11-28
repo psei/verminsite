@@ -819,11 +819,26 @@ strong {
   display: flex;
   align-items: center;
   cursor: pointer;
-  transition: all 0.5s ease;
+  position: relative;
+  z-index: 1;
 }
 
-.playlist-box .tape .tape-top:hover {
+.playlist-box .tape .tape-top::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
   background: #d9d9d9;
+  transition: all 0.5s ease;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+.playlist-box .tape .tape-top:hover::after {
+  transform: scaleX(1);
 }
 
 .playlist-box .tape .tape-top .tape-image {

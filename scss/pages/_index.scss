@@ -54,9 +54,25 @@
       display: flex;
       align-items: center;
       cursor: pointer;
-      transition: $transition-1;
-      &:hover {
+      position: relative;
+      z-index: 1;
+      &::after {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
         background: $color-grey-9;
+        transition: $transition-1;
+        transform: scaleX(0);
+        transform-origin: left;
+      }
+      &:hover {
+        &::after {
+          transform: scaleX(1);
+        }
       }
       .tape-image {
         flex: 1;
