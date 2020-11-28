@@ -297,10 +297,37 @@ a {
   color: #ff0f9c;
   cursor: pointer;
   transition: all 0.3s ease;
+  position: relative;
 }
 
 a:hover {
   color: #27c3ff;
+}
+
+a.text-link {
+  color: #ff0f9c;
+}
+
+a.text-link::after {
+  position: absolute;
+  content: '';
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #ff0f9c;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: all 0.3s ease;
+}
+
+a.text-link:hover {
+  color: #ff0f9c;
+}
+
+a.text-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: right;
 }
 
 p.paragraph {
