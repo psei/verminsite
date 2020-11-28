@@ -230,7 +230,7 @@ h3 {
 }
 
 h4 {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   background-color: #156787;
   background-image: linear-gradient(45deg, #156787, #ff0f9c);
   background-size: 100%;
@@ -243,12 +243,18 @@ h4 {
 
 @media screen and (min-width: 768px) {
   h4 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  h4 {
     font-size: 2.2rem;
   }
 }
 
 h5 {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -782,8 +788,15 @@ strong {
 
 .playlist-box .tape .tape-top {
   margin-bottom: 1.925rem;
+  padding: 0.9625rem;
   display: flex;
   align-items: center;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.playlist-box .tape .tape-top:hover {
+  background: #d9d9d9;
 }
 
 .playlist-box .tape .tape-top .tape-image {
@@ -820,6 +833,26 @@ strong {
   }
 }
 
+.playlist-box .tape .tape-top .tape-button .tape-btn .fa-plus {
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .playlist-box .tape .tape-top .tape-button .tape-btn .fa-plus {
+    font-size: 3rem;
+  }
+}
+
+.playlist-box .tape .tape-top .tape-button .tape-btn .fa-caret-up {
+  font-size: 3rem;
+}
+
+@media screen and (min-width: 768px) {
+  .playlist-box .tape .tape-top .tape-button .tape-btn .fa-caret-up {
+    font-size: 4rem;
+  }
+}
+
 .playlist-box .tape .tape-content {
   visibility: hidden;
   height: 0;
@@ -837,6 +870,10 @@ strong {
   transition: all 1.5s ease;
   transform: translateY(-2rem);
   opacity: 0;
+}
+
+.playlist-box .tape:target .tape-top {
+  background: #d9d9d9;
 }
 
 .playlist-box .tape:target .tape-content {

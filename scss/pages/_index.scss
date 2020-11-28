@@ -50,8 +50,14 @@
     margin-bottom: $y;
     .tape-top {
       margin-bottom: $y/2;
+      padding: $y/4;
       display: flex;
       align-items: center;
+      cursor: pointer;
+      transition: $transition-1;
+      &:hover {
+        background: $color-grey-9;
+      }
       .tape-image {
         flex: 1;
         margin-right: $x;
@@ -71,6 +77,18 @@
           @include flex-center;
           @media screen and (min-width: $tablet) {
             font-size: 6rem;
+          }
+          .fa-plus {
+            font-size: 2rem;
+            @media screen and (min-width: $tablet) {
+              font-size: 3rem;
+            }
+          }
+          .fa-caret-up {
+            font-size: 3rem;
+            @media screen and (min-width: $tablet) {
+              font-size: 4rem;
+            }
           }
         }
       }
@@ -92,6 +110,9 @@
       }
     }
     &:target {
+      .tape-top {
+        background: $color-grey-9;
+      }
       .tape-content {
         visibility: visible;
         height: auto;

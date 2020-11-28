@@ -4,6 +4,9 @@ const toTopBtn = document.querySelector('.to-top');
 const scrollLinks = document.querySelectorAll('.scroll-link');
 const langBtns = document.querySelectorAll('.lang-btn');
 const scrollElements = document.querySelectorAll('.scroll');
+const tapes = document.querySelectorAll('.tape');
+const tapeBtns = document.querySelectorAll('.tape-btn');
+
 
 ////////////////////////
 // event listeners
@@ -13,6 +16,10 @@ function eventListeners() {
   //change language
   langBtns.forEach(btn => {
     btn.addEventListener('click', changeLangauge);
+  });
+  //show tape content
+  tapes.forEach(tape => {
+    tape.addEventListener('click', showTapeContent);
   });
 };
 
@@ -25,6 +32,20 @@ function handleScroll() {
 
 ////////////////////////
 // functions
+
+// open tape content
+function showTapeContent(e) {
+  e.preventDefault();
+  const tapeID = e.currentTarget.id;
+  const tapeButton = e.currentTarget.querySelector('.tape-btn');
+  if (tapeID.indexOf('tape') != -1) {
+    window.location.hash = tapeID;
+    tapeBtns.forEach(tapeBtn => {
+      tapeBtn.innerHTML = '<i class="fas fa-plus"></i>';
+    });
+    tapeButton.innerHTML = '<i class="fas fa-caret-up"></i>';
+  }
+}
 
 // show element when it is in viewport
 function showSection() {
