@@ -4,6 +4,7 @@ const toTopBtn = document.querySelector('.to-top');
 const scrollLinks = document.querySelectorAll('.scroll-link');
 const langBtns = document.querySelectorAll('.lang-btn');
 const scrollElements = document.querySelectorAll('.scroll');
+const dividerElements = document.querySelectorAll('.divider');
 const tapes = document.querySelectorAll('.tape');
 const tapeBtns = document.querySelectorAll('.tape-btn');
 
@@ -28,10 +29,22 @@ function eventListeners() {
 function handleScroll() {
   showBackToTop();
   showSection();
+  handleDivider();
 };
 
 ////////////////////////
 // functions
+
+// show element when it is in viewport
+function handleDivider() {
+  dividerElements.forEach(element => {
+    if (isInViewport(element, 0.30)) {
+      element.classList.add('active');
+    } else {
+      element.classList.remove('active');
+    }
+  });
+};
 
 // open tape content
 function showTapeContent(e) {
@@ -45,20 +58,20 @@ function showTapeContent(e) {
     });
     tapeButton.innerHTML = '<i class="fas fa-caret-up"></i>';
   }
-}
+};
 
 // show element when it is in viewport
 function showSection() {
   scrollElements.forEach(element => {
-    if (isInViewport(element)) {
+    if (isInViewport(element, 0.65)) {
       element.classList.add('appear');
     }
   });
-}
+};
 
-function isInViewport (element) {
-    const bounding = element.getBoundingClientRect();
-    return bounding.top <= window.innerHeight * 0.65;
+function isInViewport (element, topValue) {
+  const bounding = element.getBoundingClientRect();
+  return bounding.top <= window.innerHeight * topValue;
 };
 
 /*
