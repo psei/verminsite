@@ -58,7 +58,7 @@ function showSection() {
 
 function isInViewport (element) {
     const bounding = element.getBoundingClientRect();
-    return bounding.top <= window.innerHeight / 2;
+    return bounding.top <= window.innerHeight * 0.65;
 };
 
 /*
