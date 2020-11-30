@@ -704,21 +704,21 @@ strong {
 
 .divider {
   height: 18rem;
-  background: linear-gradient(to bottom, #fafafa 50%, #fff 50%, #fff 100%);
   overflow: hidden;
 }
 
 .divider--1 {
   position: relative;
+  background: linear-gradient(to bottom, #fff 50%, #fafafa 50%, #fafafa 100%);
 }
 
 .divider--1 .left {
   position: absolute;
   top: 50%;
-  left: 30%;
-  height: 8rem;
-  width: 8rem;
-  padding: 1.6rem;
+  left: 15%;
+  height: 5rem;
+  width: 5rem;
+  padding: 1.06667rem;
   transform: translate(0%, -50%);
   background: #000;
   border-radius: 999rem;
@@ -727,6 +727,24 @@ strong {
   justify-content: center;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   transition: all 0.5s ease;
+}
+
+@media screen and (min-width: 768px) {
+  .divider--1 .left {
+    left: 25%;
+    height: 6rem;
+    width: 6rem;
+    padding: 1.28rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .divider--1 .left {
+    left: 30%;
+    height: 8rem;
+    width: 8rem;
+    padding: 1.6rem;
+  }
 }
 
 .divider--1 .left:hover {
@@ -737,9 +755,9 @@ strong {
   position: absolute;
   top: 50%;
   left: 50%;
-  height: 8rem;
-  width: 8rem;
-  padding: 1.6rem;
+  height: 5rem;
+  width: 5rem;
+  padding: 1.06667rem;
   transform: translate(-50%, -50%);
   background: #000;
   border-radius: 999rem;
@@ -750,6 +768,22 @@ strong {
   transition: all 0.5s ease;
 }
 
+@media screen and (min-width: 768px) {
+  .divider--1 .middle {
+    height: 6rem;
+    width: 6rem;
+    padding: 1.28rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .divider--1 .middle {
+    height: 8rem;
+    width: 8rem;
+    padding: 1.6rem;
+  }
+}
+
 .divider--1 .middle:hover {
   background: #ff0f9c;
 }
@@ -757,10 +791,10 @@ strong {
 .divider--1 .right {
   position: absolute;
   top: 50%;
-  right: 30%;
-  height: 8rem;
-  width: 8rem;
-  padding: 1.6rem;
+  right: 15%;
+  height: 5rem;
+  width: 5rem;
+  padding: 1.06667rem;
   transform: translate(0%, -50%);
   background: #000;
   border-radius: 999rem;
@@ -769,6 +803,25 @@ strong {
   justify-content: center;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   transition: all 0.5s ease;
+}
+
+@media screen and (min-width: 768px) {
+  .divider--1 .right {
+    right: 25%;
+    height: 6rem;
+    width: 6rem;
+    padding: 1.28rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .divider--1 .right {
+    top: 50%;
+    right: 30%;
+    height: 8rem;
+    width: 8rem;
+    padding: 1.6rem;
+  }
 }
 
 .divider--1 .right:hover {
@@ -780,16 +833,159 @@ strong {
   opacity: 0;
 }
 
+@media screen and (min-width: 1024px) {
+  .divider--1.active .left {
+    transform: translate(-60rem, -50%);
+  }
+}
+
 .divider--1.active .middle {
-  height: 16rem;
-  width: 16rem;
+  height: 8rem;
+  width: 8rem;
   background: #27c3ff;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+@media screen and (min-width: 768px) {
+  .divider--1.active .middle {
+    height: 12rem;
+    width: 12rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .divider--1.active .middle {
+    height: 16rem;
+    width: 16rem;
+  }
 }
 
 .divider--1.active .right {
   transform: translate(40rem, -50%);
   opacity: 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .divider--1.active .right {
+    transform: translate(60rem, -50%);
+  }
+}
+
+.divider--2 {
+  position: relative;
+  background: linear-gradient(to bottom, #fafafa 50%, #fff 50%, #fff 100%);
+}
+
+.divider--2 .left {
+  position: absolute;
+  top: 50%;
+  left: 17.5%;
+  height: 5rem;
+  width: 5rem;
+  padding: 1.06667rem;
+  transform: translate(0%, -50%);
+  background: #000;
+  border-radius: 999rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  transition: all 1.5s ease;
+}
+
+@media screen and (min-width: 768px) {
+  .divider--2 .left {
+    left: 30%;
+    height: 7rem;
+    width: 7rem;
+    padding: 1.28rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .divider--2 .left {
+    left: 40%;
+    height: 8rem;
+    width: 8rem;
+    padding: 1.6rem;
+  }
+}
+
+.divider--2 .left:hover {
+  background: #ff0f9c;
+}
+
+.divider--2 .right {
+  position: absolute;
+  top: 50%;
+  right: 17.5%;
+  height: 5rem;
+  width: 5rem;
+  padding: 1.06667rem;
+  transform: translate(0%, -50%);
+  background: #000;
+  border-radius: 999rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  transition: all 1.5s ease 0.1s;
+}
+
+@media screen and (min-width: 768px) {
+  .divider--2 .right {
+    right: 30%;
+    height: 7rem;
+    width: 7rem;
+    padding: 1.28rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .divider--2 .right {
+    right: 40%;
+    height: 8rem;
+    width: 8rem;
+    padding: 1.6rem;
+  }
+}
+
+.divider--2 .right:hover {
+  background: #ff0f9c;
+}
+
+.divider--2.active .left {
+  transform: translate(40rem, -50%);
+  opacity: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .divider--2.active .left {
+    transform: translate(80rem, -50%);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .divider--2.active .left {
+    transform: translate(120rem, -50%);
+  }
+}
+
+.divider--2.active .right {
+  transform: translate(40rem, -50%);
+  opacity: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .divider--2.active .right {
+    transform: translate(80rem, -50%);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .divider--2.active .right {
+    transform: translate(120rem, -50%);
+  }
 }
 
 .main-footer {

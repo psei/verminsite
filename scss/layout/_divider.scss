@@ -1,27 +1,39 @@
 .divider {
   height: 18rem;
-  background: linear-gradient(
-    to bottom,
-    $color-grey-10 50%,
-    $color-white 50%,
-    $color-white 100%
-  );
   overflow: hidden;
   &--1 {
     position: relative;
+    background: linear-gradient(
+      to bottom,
+      $color-white 50%,
+      $color-grey-10 50%,
+      $color-grey-10 100%
+    );
     .left {
       position: absolute;
       top: 50%;
-      left: 30%;
-      height: 8rem;
-      width: 8rem;
-      padding: $x;
+      left: 15%;
+      height: 5rem;
+      width: 5rem;
+      padding: $x/1.5;
       transform: translate(0%, -50%);
       background: $color-black;
       border-radius: $radius-full;
       @include flex-center;
       box-shadow: $shadow-1;
       transition: $transition-1;
+      @media screen and (min-width: $tablet) {
+        left: 25%;
+        height: 6rem;
+        width: 6rem;
+        padding: $x/1.25;
+      }
+      @media screen and (min-width: $desktop) {
+        left: 30%;
+        height: 8rem;
+        width: 8rem;
+        padding: $x;
+      }
       &:hover {
         background: $color-accent-5;
       }
@@ -30,15 +42,25 @@
       position: absolute;
       top: 50%;
       left: 50%;
-      height: 8rem;
-      width: 8rem;
-      padding: $x;
+      height: 5rem;
+      width: 5rem;
+      padding: $x/1.5;
       transform: translate(-50%, -50%);
       background: $color-black;
       border-radius: $radius-full;
       @include flex-center;
       box-shadow: $shadow-1;
       transition: $transition-1;
+      @media screen and (min-width: $tablet) {
+        height: 6rem;
+        width: 6rem;
+        padding: $x/1.25;
+      }
+      @media screen and (min-width: $desktop) {
+        height: 8rem;
+        width: 8rem;
+        padding: $x;
+      }
       &:hover {
         background: $color-accent-5;
       }
@@ -46,16 +68,29 @@
     .right {
       position: absolute;
       top: 50%;
-      right: 30%;
-      height: 8rem;
-      width: 8rem;
-      padding: $x;
+      right: 15%;
+      height: 5rem;
+      width: 5rem;
+      padding: $x/1.5;
       transform: translate(0%, -50%);
       background: $color-black;
       border-radius: $radius-full;
       @include flex-center;
       box-shadow: $shadow-1;
       transition: $transition-1;
+      @media screen and (min-width: $tablet) {
+        right: 25%;
+        height: 6rem;
+        width: 6rem;
+        padding: $x/1.25;
+      }
+      @media screen and (min-width: $desktop) {
+        top: 50%;
+        right: 30%;
+        height: 8rem;
+        width: 8rem;
+        padding: $x;
+      }
       &:hover {
         background: $color-accent-5;
       }
@@ -64,16 +99,119 @@
       .left {
         transform: translate(-40rem, -50%);
         opacity: 0;
+        @media screen and (min-width: $desktop) {
+          transform: translate(-60rem, -50%);
+        }
       }
       .middle {
-        height: 16rem;
-        width: 16rem;
+        height: 8rem;
+        width: 8rem;
         background: $color-primary-5;
         box-shadow: $shadow-3;
+        @media screen and (min-width: $tablet) {
+          height: 12rem;
+          width: 12rem;
+        }
+        @media screen and (min-width: $desktop) {
+          height: 16rem;
+          width: 16rem;
+        }
       }
       .right {
         transform: translate(40rem, -50%);
         opacity: 0;
+        @media screen and (min-width: $desktop) {
+          transform: translate(60rem, -50%);
+        }
+      }
+    }
+  }
+  &--2 {
+    position: relative;
+    background: linear-gradient(
+      to bottom,
+      $color-grey-10 50%,
+      $color-white 50%,
+      $color-white 100%
+    );
+    .left {
+      position: absolute;
+      top: 50%;
+      left: 17.5%;
+      height: 5rem;
+      width: 5rem;
+      padding: $x/1.5;
+      transform: translate(0%, -50%);
+      background: $color-black;
+      border-radius: $radius-full;
+      @include flex-center;
+      box-shadow: $shadow-1;
+      transition: $transition-2;
+      @media screen and (min-width: $tablet) {
+        left: 30%;
+        height: 7rem;
+        width: 7rem;
+        padding: $x/1.25;
+      }
+      @media screen and (min-width: $desktop) {
+        left: 40%;
+        height: 8rem;
+        width: 8rem;
+        padding: $x;
+      }
+      &:hover {
+        background: $color-accent-5;
+      }
+    }
+    .right {
+      position: absolute;
+      top: 50%;
+      right: 17.5%;
+      height: 5rem;
+      width: 5rem;
+      padding: $x/1.5;
+      transform: translate(0%, -50%);
+      background: $color-black;
+      border-radius: $radius-full;
+      @include flex-center;
+      box-shadow: $shadow-1;
+      transition: $transition-2 0.1s;
+      @media screen and (min-width: $tablet) {
+        right: 30%;
+        height: 7rem;
+        width: 7rem;
+        padding: $x/1.25;
+      }
+      @media screen and (min-width: $desktop) {
+        right: 40%;
+        height: 8rem;
+        width: 8rem;
+        padding: $x;
+      }
+      &:hover {
+        background: $color-accent-5;
+      }
+    }
+    &.active {
+      .left {
+        transform: translate(40rem, -50%);
+        opacity: 0;
+        @media screen and (min-width: $tablet) {
+          transform: translate(80rem, -50%);
+        }
+        @media screen and (min-width: $desktop) {
+          transform: translate(120rem, -50%);
+        }
+      }
+      .right {
+        transform: translate(40rem, -50%);
+        opacity: 0;
+        @media screen and (min-width: $tablet) {
+          transform: translate(80rem, -50%);
+        }
+        @media screen and (min-width: $desktop) {
+          transform: translate(120rem, -50%);
+        }
       }
     }
   }
