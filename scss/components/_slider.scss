@@ -1,0 +1,102 @@
+.image-slider {
+  &__box {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: $y;
+  }
+  &__images {
+    display: flex;
+    transition: $transition-2;
+  }
+  &__image {
+    flex: 0 0 100%;
+    position: relative;
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      background: linear-gradient(
+        to top,
+        rgba($color-black, 0.5) 20%,
+        rgba($color-black, 0.5) 21%,
+        rgba($color-black, 0)
+      );
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      transition: $transition-1 1s;
+      .title {
+        color: $color-white;
+        margin-bottom: $y;
+        opacity: 0;
+        transform: translateY(-2rem);
+        transition: $transition-1 1.25s;
+      }
+    }
+    &.active {
+      .overlay {
+        opacity: 1;
+        .title {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    }
+  }
+  &__controls {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .prev,
+    .next {
+      cursor: pointer;
+      height: 8rem;
+      width: 6rem;
+      background: rgba($color-white, 0.3);
+      @include flex-center;
+      transition: $transition-1;
+      i {
+        font-size: 2.4rem;
+        color: $color-white;
+        transition: $transition-1;
+      }
+      &:hover {
+        background: rgba($color-white, 0.5);
+        i {
+          color: $color-accent-5;
+        }
+      }
+    }
+  }
+  &__nav {
+    height: 8px;
+    width: 24rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    .dot {
+      cursor: pointer;
+      flex: 1;
+      background: $color-primary-8;
+      height: 8px;
+      transition: $transition-1;
+      &:hover {
+        background: $color-accent-8;
+        height: 12px;
+      }
+      &.active {
+        background: $color-accent-5;
+        height: 12px;
+      }
+    }
+  }
+}
